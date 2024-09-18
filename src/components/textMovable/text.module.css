@@ -1,0 +1,42 @@
+
+.main {
+    overflow: hidden;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2cd3cb;
+    height: 2.894vw; 
+  }
+  
+  .sliderContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    white-space: nowrap;
+   animation: moveText 20s linear infinite; /* Modificar segun lo rapido que quieras que se mueva */
+    width: max-content; 
+  }
+  
+  @keyframes moveText {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%); /* Se mueve la mitad para que el contenido duplicado comience */
+  }}
+  
+  .textBlock {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el texto y los iconos */
+    flex-shrink: 0; /* Evita que los bloques se reduzcan en tamaño */
+    margin-right: 20px; /* Espacio entre los bloques de texto */
+  }
+  
+  .slider p {
+    font-size: 1.042vw; 
+  }
